@@ -1,1 +1,1 @@
-Projeto para armazenamento de links úteis utilizando JS, HTMLS e CSS.
+Projeto para armazenamento de links úteis utilizando JS, HTML e CSS.
