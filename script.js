@@ -6,9 +6,11 @@ let item
 
 function SalvarLink() { 
     if(document.getElementById("Link").value != ""){
-        item = document.getElementById("Link").value
+        item = document.getElementById("Link")
         itemId = ul.childElementCount
-        li = CriarElemento(itemId)
+        li = CriarElemento(item.value, itemId)
+        li.appendChild(createRemoverLinkbotao(itemId))
+        ul.appendChild(li)
     }
 
 }
