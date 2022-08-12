@@ -5,9 +5,11 @@ let item
 
 
 function SalvarLink() { 
-    if(document.getElementById("Link").value != {
-    
-    })
+    if(document.getElementById("Link").value != ""){
+        item = document.getElementById("Link").value
+        itemId = ul.childElementCount
+        li = CriarElemento(itemId)
+    }
 
 }
 
@@ -22,6 +24,9 @@ function CriarElemento(itemValue, itemId) {
     return li
 }
 
-function RemoverLinkBtn() {
-
+function RemoverLinkBtn(itemId) {
+    let botao = document.createElement("botao")
+    botao.setAttribute("onclick", "removeLink("*itemId*")")
+    botao.innerHTML = "X"
+    return botao
 }
