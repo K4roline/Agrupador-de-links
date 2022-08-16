@@ -1,4 +1,4 @@
-var ul = document.getElementById("Link")
+var ul = document.getElementById("ListaLinks")
 var li
 var itemId
 let item
@@ -11,12 +11,17 @@ function SalvarLink() {
         li = CriarElemento(item.value, itemId)
         li.appendChild(createRemoverLinkbotao(itemId))
         ul.appendChild(li)
+        item.value = "";
     }
 
 }
 
 function RemoverLink() {
-
+    for( i = 0 ; i < ul.children.length ; i++) {
+        if(ul.children[i].getAttribute("index") == itemId) {
+            ul.children[i].remove()
+        }
+    }
 }
 
 function CriarElemento(itemValue, itemId) {
