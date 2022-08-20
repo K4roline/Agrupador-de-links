@@ -15,10 +15,10 @@ function salvarLink() {
 function updateScreen() {
     var lista = "<ul>"
         Link.forEach((Link=>{
-        lista += "<li id-data=" + Link.id+ ">" + Link.data.descricao + "</li>"
+        lista += "<li id-data=" + Link.id + ">" + Link.data.descricao + "</li>"
     }))
 
         lista += "</ul>"
-        document.getElementById("list").innerHTML = list
+        document.getElementById("list").innerHTML = lista
         document.getElementById("NovoLink").value = ""
 }
