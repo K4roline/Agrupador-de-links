@@ -1,28 +1,27 @@
-var lista = document.createElement("li")
-var descricaoLink = document.getElementById("NovoLink").value
-var Link = document.createTextNode(descricaoLink)
+function SalvarLink () {
+    var lista = document.createElement("li")
+    var descricaoLink = document.getElementById("NovoLink").value
+    var Link = document.createTextNode(descricaoLink)
+    li.appendChild(t)
 
-// var Link = []
+    if (inputValue === '') {
+      alert("Insira o Link a ser salvo!")
+    } else {
+      document.getElementById("Ul").appendChild(li)
+    }
 
-// function salvarLink() {
-//     var descricaoLink = document.getElementById("NovoLink").value
-//     var Link = {
-//         id: idGenerator(),
-//         data: {
-//             descricao: descricaoLink 
-//         }
-//     }
-//     Link.push(Link)
-//     updateScreen()
-// }
+    document.getElementById("NovoLink").value = ""
 
-// function updateScreen() {
-//     var lista = "<ul>"
-//         Link.forEach((Link=>{
-//         lista += "<li id-data=" + Link.id + ">" + Link.data.descricao + "</li>"
-//     }))
-
-//         lista += "</ul>"
-//         document.getElementById("list").innerHTML = lista
-//         document.getElementById("NovoLink").value = ""
-// }
+    var span = document.createElement("salvarLink");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
