@@ -13,7 +13,7 @@ function SalvarLink () {
     document.getElementById("NovoLink").value = ""
 
     var span = document.createElement("SPAN")
-    var txt = document.createTextNode("\u00D7")
+    var txt = document.createTextNode("\u00D7") // multiplica o item
     span.className = "close"
     span.appendChild(txt)
     li.appendChild(span)
