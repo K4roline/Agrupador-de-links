@@ -1,7 +1,8 @@
 function SalvarLink () {
     var li = document.createElement("li")
     var inputValue = document.getElementById("NovoLink").value
-    var t = document.createTextNode(inputValue)
+    var addButton = document.getElementsByTagName("button")
+    var t = document.createTextNode("inputValue")
     li.appendChild(t)
 
     if (inputValue === '') {
