@@ -9,8 +9,16 @@ function SalvarLink() {
     elemento.classList.add("Adicione um link a ser salvo")
   }
 
+const divItens = document.createElement("div")
+divItens.classList.add("form-div-itens")
+lista.appendChild(divItens)
 
-  
+const elemento = document.createElement("p")
+elemento.classList.add("form-p")
+elemento.innerHTML = texto
+
+divItens.appendChild(elemento)
+divItens.appendChild(tagInput)
 }
 
 // function SalvarLink () {
