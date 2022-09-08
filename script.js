@@ -1,25 +1,27 @@
-const botao = document.querySelector("salvarLink")
-const lista = document.querySelector("Ul")
+var button = document.createElement("Ul")
+var inputValue = document.getElementById("NovoLink").value
+var addButton = document.getElementsByTagName("button")
+var lista = document.createElement("Ul")
 
-botao.addEventListener("click", () => criarElemento)
+  button.addEventListener("click", () => criarElemento)
 
-function SalvarLink() {
-  const link = NovoLink.value 
-  if (link == ""){
-    elemento.classList.add("Adicione um link a ser salvo")
-  }
+    if (inputValue === '') {
+    alert("Insira o Link a ser salvo!") }
+     else {
+      document.getElementById("Ul").appendChild(li)
+    }
 
-const divItens = document.createElement("div")
-divItens.classList.add("form-div-itens")
-lista.appendChild(divItens)
+  var divItens = document.createElement("div")
+  divItens.classList.add("form-div-itens")
+  lista.appendChild(divItens)
 
-const elemento = document.createElement("p")
-elemento.classList.add("form-p")
-elemento.innerHTML = texto
+  var elemento = document.createElement("li")
+  elemento.classList.add("form-li")
+  elemento.innerHTML = texto
 
-divItens.appendChild(elemento)
-divItens.appendChild(tagInput)
-}
+  divItens.appendChild(elemento)
+  divItens.appendChild(tagInput)
+  
 
 // function SalvarLink () {
 //     var li = document.createElement("li")
