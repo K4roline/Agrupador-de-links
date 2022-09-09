@@ -5,8 +5,11 @@ var lista = document.createElement("Ul")
 
   button.addEventListener("click", () => criarElemento)
 
-    if (inputValue === '') {
-      const lista = NovoLink.value
+  function criarElemento(){
+
+    const lista = NovoLink.value
+
+    if (inputValue == "") {
     alert("Insira o Link a ser salvo!") }
      else {
       document.getElementById("Ul").appendChild(li)
@@ -22,7 +25,7 @@ var lista = document.createElement("Ul")
 
   divItens.appendChild(elemento)
   divItens.appendChild(tagInput)
-  
+}
 
 // function SalvarLink () {
 //     var li = document.createElement("li")
