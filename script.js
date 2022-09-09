@@ -6,6 +6,7 @@ var lista = document.createElement("Ul")
   button.addEventListener("click", () => criarElemento)
 
     if (inputValue === '') {
+      const lista = NovoLink.value
     alert("Insira o Link a ser salvo!") }
      else {
       document.getElementById("Ul").appendChild(li)
@@ -17,7 +18,7 @@ var lista = document.createElement("Ul")
 
   var elemento = document.createElement("li")
   elemento.classList.add("form-li")
-  elemento.innerHTML = texto
+  elemento.innerHTML = lista
 
   divItens.appendChild(elemento)
   divItens.appendChild(tagInput)
