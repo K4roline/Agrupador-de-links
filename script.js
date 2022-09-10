@@ -1,57 +1,10 @@
-var button = document.createElement("Ul")
-var inputValue = document.getElementById("NovoLink").value
-var addButton = document.getElementsByTagName("button")
-var lista = document.createElement("Ul")
 
-  button.addEventListener("click", () => criarElemento)
+function add() {
+  let li = document.createElement('LI');
+  let input_value = document.form_main.task.value;
+  let input_text = document.createTextNode(input_value);
 
-  function criarElemento(){
-
-    const lista = NovoLink.value
-
-    if (inputValue == "") {
-    alert("Insira o Link a ser salvo!") }
-     else {
-      document.getElementById("Ul").appendChild(li)
-    }
-
-  var divItens = document.createElement("div")
-  divItens.classList.add("form-div-itens")
-  lista.appendChild(divItens)
-
-  var elemento = document.createElement("li")
-  elemento.classList.add("form-li")
-  elemento.innerHTML = lista
-
-  divItens.appendChild(elemento)
-  divItens.appendChild(tagInput)
+  li.appendChild(input_text);
+  document.querySelector('ul').appendChild(li);
+  document.form_main.task.value = "";
 }
-
-// function SalvarLink () {
-//     var li = document.createElement("li")
-//     var inputValue = document.getElementById("NovoLink").value
-//     var addButton = document.getElementsByTagName("button")
-//     var t = document.createTextNode("inputValue")
-//     li.appendChild(t)
-
-//     if (inputValue === '') {
-//       alert("Insira o Link a ser salvo!")
-//     } else {
-//       document.getElementById("Ul").appendChild(li)
-//     }
-
-//     document.getElementById("NovoLink").value = ""
-
-//     var span = document.createElement("SPAN")
-//     var txt = document.createTextNode("\u00D7") // multiplica o item
-//     span.className = "close"
-//     span.appendChild(txt)
-//     li.appendChild(span)
-  
-//     for (i = 0; i < close.length; i++) {
-//       close[i].onclick = function() {
-//         var div = this.parentElement
-//         div.style.display = "none"
-//       }
-//     }
-//   }
