@@ -4,10 +4,11 @@ function add() {
   let input_value = document.form_main.task.value
   let input_text = document.createTextNode(input_value)
 
-  li.appendChild(input_text);
+  li.appendChild(input_text)
   document.querySelector('ul').appendChild(li)
   document.form_main.task.value = ""
 }
+
 
 
 
