@@ -11,3 +11,10 @@ function add() {
 }
 
 
+
+
+// Deixar o campo do link funcionando e alinhado com o titulo 
+// inserir o botao de excluir o link
+// inserir o acesso ao link com o click
+
+// ** arrumar o linkedin vendo as dicas 
