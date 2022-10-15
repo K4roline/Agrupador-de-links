@@ -14,12 +14,10 @@ function add() {
 
   // botao.innerHTML = 'Excluir'
 
-  // campo_botao.addEventListener("click", function() {
+  // botao.addEventListener("click", function() {
   // linha.parentNode.parentNode.removeChild(linha.parentNode)
   // })
+
+
   
-
-
-
-
 
