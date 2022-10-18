@@ -14,24 +14,21 @@
     </head>
     <body>
 
-        <h1>Agrupador de Links</h1>
+        <h1>Lista de tarefas</h1>
 
             <div class="container">
-                <form name="form">
-                    <!-- <label for="task"> Insira o titulo do Link: </label>
-                    <input type="text" name="tituloLink" id="tituloLink"/> -->
-                    <label for="task"> Insira o Link a ser salvo: </label>
-                    <input type="text" name="Link" id="Link"/>
-                    <button type="button" onclick="add()"> Salvar </button>
+                <form name="form_main">
+                <label for="task"> Adicione o link a ser salvo:</label> 
+                <input type="text" name="task" id="task"/> 
+                <button type="button" onclick="add()"> Salvar </button>
                 </form>
-            </div> 
+            </div>
             
-            <h2>Links Salvos:</h2>
-                <div class="containerLinks">
-                    <ul>
-                        <!-- <button type="button" onclick="excluir()"> Excluir </button> -->
-                    </ul>
-            </div> 
+            <div class="containerLinks">
+                <h2>Links salvos:</h2>
+                <ul>
+                </ul>
+            </div>
 
     </body>
 </html>

@@ -1,23 +1,27 @@
+function createCloseButton(li) {
+  let span = document.createElement("SPAN")
+  let txt = document.createTextNode("\u00D7")
+
+  span.className = "close";
+  span.appendChild(txt)
+  li.appendChild(span)
+
+  span.onclick = () => span.parentElement.style.display = "none"
+}
+
+document.querySelectorAll('li').forEach(createCloseButton)
 
 function add() {
-  var li = document.createElement('li')
-  // var input_value = document.form.tituloLink.value
-  var input_value = document.form.Link.value
-  var input_text = document.createTextNode(input_value)
+  let li = document.createElement('LI')
+  let input_value = document.form_main.task.value
+  let input_text = document.createTextNode(input_value)
 
   li.appendChild(input_text)
   document.querySelector('ul').appendChild(li)
-  document.form.Link.value = ""
-  }
+  document.form_main.task.value = ""
 
-  // var botao = document.createElement('button')
-
-  // botao.innerHTML = 'Excluir'
-
-  // botao.addEventListener("click", function() {
-  // linha.parentNode.parentNode.removeChild(linha.parentNode)
-  // })
-
-
+  createCloseButton(li)
+}
   
+
 
