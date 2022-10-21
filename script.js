@@ -22,6 +22,12 @@ function add() {
 
   createCloseButton(li)
 }
-  
+
+// var link = document.getElementsByTagName('li');
+// for (var i=0, len = link.length; i<len; i++)
+//     link[i].setAttribute('value');
+
+// window.open('li', '_blank');
+
 
 
