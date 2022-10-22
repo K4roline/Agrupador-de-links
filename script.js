@@ -23,11 +23,11 @@ function add() {
   createCloseButton(li)
 }
 
-// var link = document.getElementsByTagName('li');
-// for (var i=0, len = link.length; i<len; i++)
-//     link[i].setAttribute('value');
-
-// window.open('li', '_blank');
-
+// window.onload = function(){
+//   var anchors = document.getElementById('li').getElementsByTagName('li');
+//   for (var i=0; i<anchors.length; i++){
+//     anchors[i].setAttribute('target', '_blank');
+//   }
+// }
 
 
