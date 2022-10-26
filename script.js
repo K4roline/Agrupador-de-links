@@ -23,11 +23,4 @@ function add() {
   createCloseButton(li)
 }
 
-// window.onload = function(){
-//   var anchors = document.getElementById('li').getElementsByTagName('li');
-//   for (var i=0; i<anchors.length; i++){
-//     anchors[i].setAttribute('target', '_blank');
-//   }
-// }
-
 
