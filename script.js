@@ -22,15 +22,3 @@ function add() {
 
   createCloseButton(li)
 }
-
-// function add() {
-//   let li = document.createElement('LI')
-//   let input_value = document.form.link.value
-//   let input_text = document.createTextNode(input_value)
-
-//   li.appendChild(input_text)
-//   document.querySelector('ul').appendChild(li)
-//   document.form_main.link.value = ""
-// }
-
-
