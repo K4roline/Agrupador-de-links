@@ -9,7 +9,10 @@
 }
 
 ul li:nth-child(odd) {
-    background: #f9f9f9;
+    background-color: #f9f9f9;
+    width: 730px;
+    border-left: auto;
+    border-right: auto;
   }
 
 h1 {
